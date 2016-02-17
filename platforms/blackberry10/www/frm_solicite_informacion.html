@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/app.css" />
+        <title>FUCS</title>
+    </head>
+    <body>
+
+        <!-- Dropdown Structure -->
+        <!-- Dropdown Structure -->
+        <ul id="dropdown_large" class="dropdown-content">
+            <li><a href="home.html">Inicio</a></li>
+            <li><a href="educacion_continua.html">Educación Continuada</a></li>
+            <li><a onclick="localStorage.setItem('seccion', 'Diplomados');location.href='item_secciones.html';">Diplomados</a></li>
+            <li><a onclick="localStorage.setItem('seccion', 'Cursos');location.href='item_secciones.html';">Cursos</a></li>
+            <li><a onclick="localStorage.setItem('seccion', 'Congresos');location.href='congreso.html';">Congresos</a></li>
+            <li><a onclick="localStorage.setItem('seccion', 'Programas de Extensión');location.href='item_secciones.html';">Programas de Extensión</a></li>
+            <li><a onclick="location.href='frm_programas_medida.html';">Programas a la medida</a></li>
+            <li><a href="programate.html">Programate</a></li>
+            <li><a href="index.html">Cerrar Sesión</a></li>
+        </ul>
+        
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo">FUCS</a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse">
+                        <!--<i class="material-icons">menu</i>-->
+                        <img src="img/menu.PNG" class="menu-icon">
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="home.html"><i class="material-icons right">view_module</i>Inicio</a></li>
+                        <!-- Dropdown Trigger -->
+                        <li><a class="dropdown-button" href="#!" data-activates="dropdown_large">Mi FUCS<i class="material-icons right">arrow_drop_down</i></a></li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
+                        <li><a href="home.html">Inicio</a></li>
+                        <li><a href="educacion_continua.html">Educación Continuada</a></li>
+                        <li><a onclick="localStorage.setItem('seccion', 'Diplomados');location.href='item_secciones.html';">Diplomados</a></li>
+                        <li><a onclick="localStorage.setItem('seccion', 'Cursos');location.href='item_secciones.html';">Cursos</a></li>
+                        <li><a onclick="localStorage.setItem('seccion', 'Congresos');location.href='congreso.html';">Congresos</a></li>
+                        <li><a onclick="localStorage.setItem('seccion', 'Programas de Extensión');location.href='item_secciones.html';">Programas de Extensión</a></li>
+                        <li><a onclick="location.href='frm_programas_medida.html';">Programas a la medida</a></li>
+                        <li><a href="programate.html">Programate</a></li>
+                        <li><a onclick="localStorage.setItem('email', '');localStorage.setItem('clave', '');localStorage.setItem('UserData', '');location.href='index.html';">Cerrar Sesión</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        
+        <div class="app-img-logo">
+            <img class="responsive-img logos" src="img/logos1.png">
+        </div>
+
+        <div class="container">
+            <br>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input placeholder="Nombres" id="nombres" type="text" class="validate">
+                            <label for="nombres">Nombres y apellidos</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input placeholder="email" data-error="correo-invalido" id="email" type="text" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input placeholder="Télefono 1" id="telefono1" type="number" class="validate">
+                            <label for="telefono1">Télefono 1</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input placeholder="Télefono 2" id="telefono2" type="number" class="validate">
+                            <label for="telefono2">Télefono 2</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input placeholder="Datos del curso" id="datos_curso" type="text" class="validate">
+                            <label for="datos_curso">Datos del Curso</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="medios_entro" class="materialize-textarea"></textarea>
+                            <label for="medios_entro">Medios por los que se enteró del curso</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <textarea id="observaciones" class="materialize-textarea"></textarea>
+                            <label for="observaciones">Observaciones</label>
+                        </div>
+                    </div>
+                    <div id="cargando"></div>
+                    <button id="btn_enviar" class="btn waves-effect waves-light app-btn" type="button" name="btn_enviar">Enviar
+                    </button>
+                </form>
+            </div>
+            
+        </div>
+
+        <footer class="page-footer app-footer">
+            <div class="footer-copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s4">
+                            <div id="ver_novedades" class="app-top-footer">
+                                <h6 class="center-align">Novedades</h5>
+                            </div>
+                        </div>
+                        <div class="col s4">
+                            <div onclick="location.href='frm_pqrs.html'" class="app-top-footer">
+                                <h6 class="center-align">PQR'S</h5>
+                            </div>
+                        </div>
+                        <div class="col s4">
+                            <div onclick="location.href='sedes.html'" class="app-top-footer">
+                                <h6 class="center-align">Sedes</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script>
+
+            $(".button-collapse").sideNav();
+
+            $("#email").val(localStorage.getItem("email"));
+
+            var obj = JSON.parse(localStorage.getItem("UserData"));
+
+            $("#nombres").val(obj[0].nombre);
+
+            $("#datos_curso").val(localStorage.getItem("titulo_curso"));
+
+            var nombres = document.getElementById('nombres');
+            var email = document.getElementById('email');
+            var telefono1 = document.getElementById('telefono1');
+            var telefono2 = document.getElementById('telefono2');
+            var datos_curso = document.getElementById('datos_curso');
+            var medios_entro = document.getElementById('medios_entro');
+
+            $("#btn_enviar").click(function(){
+
+                $("#cargando").html('<div class="preloader-wrapper big active"><div class="spinner-layer spinner-blue-only"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div></div>');
+
+                if(nombres.value.length > 0)
+                {
+                    if(email.value.length > 0)
+                    {
+                        var patron=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+                        if(email.value.search(patron)==0)
+                        {
+                            if(telefono1.value.length > 6)
+                            {
+                                if(datos_curso.value.length > 0)
+                                {
+                                    $.ajax({
+                                        type:'GET',
+                                        url: "http://104.130.1.174/fucsapi/Forms.php?callback=?",
+                                        dataType:'jsonp',
+                                        data: {
+                                            ACCION : "solicite_informacion",
+                                            nombres: nombres.value,
+                                            email: email.value,
+                                            telefono1: telefono1.value,
+                                            telefono2: telefono2.value,
+                                            datos_curso: datos_curso.value,
+                                            medios_entro: medios_entro.value,
+                                            observaciones: observaciones.value
+                                        },
+                                        success:function(repuesta){                    
+
+                                            console.log(repuesta, arguments);
+                                            var json = JSON.stringify(repuesta);
+                                            var obj = JSON.parse(json);
+
+                                            console.log(obj.query_result);
+                                            var query_result = obj.query_result;
+                                            
+                                            if (!isNaN(query_result)) 
+                                            {
+                                                Materialize.toast("Información enviada con exito!", 4000, '', function(){ location.reload(); });
+                                                
+                                            }
+                                            else{
+                                                $("#cargando").html('');
+                                                Materialize.toast(query_result, 4000);
+                                            }
+
+                                        },
+                                        error:function(xhr,err,e){
+                                            console.log('xhr: ' + xhr);
+                                            console.log('err: ' + err);
+                                            console.log('e: ' + e);
+                                        }
+                                    });
+                                }
+                                else
+                                {
+                                    $("#cargando").html('');
+                                    Materialize.toast('Ingrese los datos del curso!', 4000);
+                                    datos_curso.focus();
+                                }
+                            }
+                            else
+                            {
+                                $("#cargando").html('');
+                                Materialize.toast('Ingrese su número de telefono!', 4000);
+                                telefono1.focus();
+                            }
+                        }
+                        else
+                        {
+                            $("#cargando").html('');
+                            Materialize.toast('email incorrecto!', 4000);
+                            email.focus();
+                        }
+                    }
+                    else
+                    {
+                        $("#cargando").html('');
+                        Materialize.toast('Ingrese su email!', 4000);
+                        email.focus();
+                    }
+                }
+                else
+                {
+                    $("#cargando").html('');
+                    Materialize.toast('Ingrese su nombre!', 4000);
+                    nombres.focus();
+                }
+
+            });
+
+        </script>
+    </body>
+</html>

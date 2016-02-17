@@ -1,0 +1,15 @@
+# view AndroidManifest.xml #generated:5
+-keep class com.kmedia.fucs.CordovaApp { <init>(...); }
+
+# view AndroidManifest.xml #generated:15
+-keep class com.pushbots.google.gcm.GCMBroadcastReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:22
+-keep class com.pushbots.plugin.Receiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:23
+-keep class com.pushbots.push.DefaultPushHandler { <init>(...); }
+
+# view AndroidManifest.xml #generated:24
+-keep class com.pushbots.push.GCMIntentService { <init>(...); }
+

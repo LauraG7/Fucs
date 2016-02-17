@@ -1,0 +1,18 @@
+{
+    "android.support.v4": {
+        "source": {
+            "type": "registry",
+            "id": "android.support.v4"
+        },
+        "is_top_level": false,
+        "variables": {}
+    },
+    "com.pushbots.push": {
+        "source": {
+            "type": "registry",
+            "id": "com.pushbots.push"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

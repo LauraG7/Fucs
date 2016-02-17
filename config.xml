@@ -1,0 +1,26 @@
+<widget id="com.kmedia.fucs" version="1.2.4" 
+    xmlns="http://www.w3.org/ns/widgets" 
+    xmlns:cdv="http://cordova.apache.org/ns/1.0">
+
+    <name>fucsapp</name>
+
+    <description>Áplication develop by mposadar</description>
+    
+    <author email="mposadar@gmail.com" href="http://algoritmo.solutions/mposadar/">Miguel Angel Posada</author>
+    
+    <content src="index.html"/>
+
+    <access uri="http://fucs.kmedia.co" subdomains="true" />
+    <access uri="https://google.com" subdomains="true" />
+    <access uri="https://fonts.googleapis.com" subdomains="true" />
+    <access uri="https://fonts.gstatic.com" subdomains="true" />
+
+    <access origin="*"/>
+    
+    <feature id="blackberry.app">
+        <param name="websecurity" value="disable" />
+    </feature>
+
+    <preference name="Orientation" value="portrait" />
+    
+</widget>

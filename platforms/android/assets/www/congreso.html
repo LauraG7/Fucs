@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/app.css" />
+        <title>FUCS</title>
+    </head>
+    <body>
+
+        <!-- Dropdown Structure -->
+        <ul id="dropdown_large" class="dropdown-content">
+            <li><a href="home.html">Inicio</a></li>
+            <li><a href="educacion_continua.html">Educación Continuada</a></li>
+            <li><a onclick="localStorage.setItem('seccion', 'Diplomados');location.href='item_secciones.html';">Diplomados</a></li>
+            <li><a onclick="localStorage.setItem('seccion', 'Cursos');location.href='item_secciones.html';">Cursos</a></li>
+            <li><a onclick="localStorage.setItem('seccion', 'Congresos');location.href='congreso.html';">Congresos</a></li>
+            <li><a onclick="localStorage.setItem('seccion', 'Programas de Extensión');location.href='item_secciones.html';">Programas de Extensión</a></li>
+            <li><a onclick="location.href='frm_programas_medida.html';">Programas a la medida</a></li>
+            <li><a href="programate.html">Programate</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="index.html">Cerrar Sesión</a></li>
+        </ul>
+        
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo">fucs educación continuada</a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse">
+                        <!--<i class="material-icons">menu</i>-->
+                        <img src="img/menu.PNG" class="menu-icon">
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="home.html"><i class="material-icons right">view_module</i>Inicio</a></li>
+                        <!-- Dropdown Trigger -->
+                        <li><a class="dropdown-button" href="#!" data-activates="dropdown_large">Mi FUCS<i class="material-icons right">arrow_drop_down</i></a></li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
+                        <li><a href="home.html">Inicio</a></li>
+                        <li><a href="educacion_continua.html">Educación Continuada</a></li>
+                        <li><a onclick="localStorage.setItem('seccion', 'Diplomados');location.href='item_secciones.html';">Diplomados</a></li>
+                        <li><a onclick="localStorage.setItem('seccion', 'Cursos');location.href='item_secciones.html';">Cursos</a></li>
+                        <li><a onclick="localStorage.setItem('seccion', 'Congresos');location.href='congreso.html';">Congresos</a></li>
+                        <li><a onclick="localStorage.setItem('seccion', 'Programas de Extensión');location.href='item_secciones.html';">Programas de Extensión</a></li>
+                        <li><a onclick="location.href='frm_programas_medida.html';">Programas a la medida</a></li>
+                        <li><a href="programate.html">Programate</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a onclick="localStorage.setItem('email', '');localStorage.setItem('clave', '');localStorage.setItem('UserData', '');location.href='index.html';">Cerrar Sesión</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container-fluid">
+            <!-- Page Content goes here -->
+            <div class="row">
+                
+                <div id="test1" class="col s12">
+                    <div class="row">
+                        <div class=""><!-- col s12 m7 -->
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="img/sample-1.jpg">
+                                    <span class="card-title">III Encuentro Nacional de Semilleros de Investigación – Facultades de Ciencias de la Salud. ENSI III</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>Fomenta y promueve iniciativas que fortalezcan la investigación formativa y aplicada.
+                                        <br>
+                                    Modalidad: Presencial Fecha de Inicio: 30 de marzo de 2015 Horarios: sábados de 7:00 a.m. a 5:00 p.m. Inversión: 40.000 para miembros de la FUCS; 60.000 miembros externos de la FUCS.Intensidad Horaria: 20 horas 10 virtuales y 10 presenciales La ecografía como estándar de calidad para aumentar la seguridad y la eficacia de los accesos vasculares centrales en los pacientes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script>
+            $(".button-collapse").sideNav();
+        </script>
+    </body>
+</html>

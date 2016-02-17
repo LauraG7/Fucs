@@ -1,0 +1,110 @@
+/*
+* Estilos App
+*/
+
+nav{
+    background-color: #040435;
+}
+
+.menu-icon{
+    margin-top: 10px;
+}
+
+.app-img-logo{
+    width: 100%;
+    text-align: center;
+    background-color: #040435;
+}
+
+img.logos{
+    background-color: #040435;
+}
+
+.display_table{
+    display: table;
+}
+
+.app-home-menu{
+
+    display: table-cell;
+    vertical-align: middle;
+
+    background-color: #040039;
+    height: 110px;
+    color: white;
+    /*padding: 22px;*/
+    font-size: 18px;
+    text-align: center;
+    text-shadow: 1px 0px 0px black;
+    box-shadow: 9px 0px 10px -4px black;
+    border-radius: 0px;
+}
+
+.cursos{
+    /*background-color: #F9B800;*/
+}
+
+.diplomados{
+    /*background-color: #3845DC;*/
+}
+
+.programas_extension{
+    /*background-color: #38ABDC;*/
+}
+
+.congresos{
+    /* background-color: green; */
+}
+
+.educacion_continua{
+    background-color: #F9B800;
+    box-shadow: 0px 0px 6px 1px #B58601 !important;
+}
+
+.footer-copyright{
+    background-color: #F9B800 !important;
+    text-shadow: 1px 1px 1px black !important;
+}
+
+.item-menu{
+    /*position: relative;
+    top: 50%;
+    transform: translateY(-50%);*/
+}
+
+.app-footer{
+    padding-top: 0px !important;
+    background-color: #040435 !important;
+}
+
+.app-top-footer{
+    padding-top: 10px;
+}
+
+.app-btn{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.app-texto-internas
+{
+    text-align: justify;
+    font-size: 16px;
+}
+
+.tabs>li>a{
+    font-size: 11px !important;
+}
+
+.brand-logo{
+    color: #F9B800 !important;
+}
+
+.collapsible-header{
+    background-color: #F9B800 !important;
+}
+
+.card-panel.teal
+{
+    background: #241E44 !important;
+}

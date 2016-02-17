@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.kmedia.fucs" version="1.2.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Console">
+        <param name="wp-package" value="DebugConsole" />
+    </feature>
+    <feature name="Device">
+        <param name="wp-package" value="Device" />
+    </feature>
+    <feature name="Notification">
+        <param name="wp-package" value="Notification" />
+    </feature>
+    <name>FUCS</name>
+    <description>Áplication develop by mposadar</description>
+    <author email="mposadar@gmail.com" href="http://algoritmo.solutions/mposadar/">Miguel Angel Posada</author>
+    <content src="index.html" />
+    <access subdomains="true" uri="http://fucs.kmedia.co" />
+    <access subdomains="true" uri="https://google.com" />
+    <access subdomains="true" uri="https://fonts.googleapis.com" />
+    <access subdomains="true" uri="https://fonts.gstatic.com" />
+    <access origin="*" />
+    <feature id="blackberry.app">
+        <param name="websecurity" value="disable" />
+    </feature>
+    <preference name="Orientation" value="portrait" />
+</widget>
